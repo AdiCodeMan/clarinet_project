@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clarinet Tone Recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Music&family=Yeon+Sung&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.js"></script>
+</head>
+
+<body>
+    <center>
+        
+        
+     <span id="header">  <h3 class="title"><img src="clarinet_515975704_1000.jpg" id="emoji">Clarinet Note Recognition<img src="mn-removebg-preview.png"></h3>
+  
+        </span>
+
+       
+        <br>
+        <p>Please play a note after clicking the Recognize button and the system will tell you what note it is.
+        <hr>
+        <p id="warning">!Warning! If the system can't figure out what note you played then you might need some practice! The image that shows under the Note Image label is the note on the Grand Staff(Music Notation)</p>
+        <hr>
+        <br>
+        <p1 id="note_name"></p1>
+        <button onclick="startClassification()"> Click and play the note </button>
+        <br>
+        <span id="workspace">
+            <label class="away">Webcam</label>
+            <label class="away" id="Note">Note is:</label>
+            <span><img id="image2"></span>
+        </span>
+
+    </center>
+    <script src="main.js"></script>
+</body> 
